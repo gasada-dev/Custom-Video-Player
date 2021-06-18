@@ -1,12 +1,16 @@
-@import "_normalize.scss";
 
+body{
+  margin: 0px;
+  padding: 0px;
+}
+  
 .main {
-    display: flex;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #a3a2a2 0%,#a99faa 50%,#b1afb1 100%);
-    background-size: cover;
-    align-items: center;
-    justify-content: center; 
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a3a2a2 0%,#a99faa 50%,#b1afb1 100%);
+  background-size: cover;
+  align-items: center;
+  justify-content: center; 
   }
    
   .player {
