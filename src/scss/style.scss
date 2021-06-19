@@ -3,7 +3,7 @@ body{
   margin: 0px;
   padding: 0px;
 }
-  
+
 .main {
   display: flex;
   min-height: 100vh;
@@ -101,7 +101,7 @@ body{
     width: 50%;
     background: #ffc600;
     flex: 0;
-    flex-basis: 50%;
+    flex-basis: 0%;
   }
     
   input[type=range] {
