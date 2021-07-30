@@ -27,12 +27,15 @@ body {
     position: absolute;
     top: 15px;
     left: 32px;
+    cursor: default;
   }
   .material-icons--speed {
     color: $color-button;
     position: absolute;
     top: 15px;
     left: 380px;
+    cursor: default;
+
   }
 }
 

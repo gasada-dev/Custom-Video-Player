@@ -33,6 +33,7 @@ body {
   position: absolute;
   top: 15px;
   left: 32px;
+  cursor: default;
 }
 
 .player .material-icons--speed {
@@ -40,6 +41,7 @@ body {
   position: absolute;
   top: 15px;
   left: 380px;
+  cursor: default;
 }
 
 .player:-webkit-full-screen {
