@@ -6,7 +6,7 @@ const TOGGLE = PLAYER.querySelector('.toggle');
 const SKIPBTN = PLAYER.querySelectorAll('[data-skip]');
 const RANGES = PLAYER.querySelectorAll('.player__slider');
 
-let togglePlay = () => {
+const togglePlay = () => {
   if (VIDEO.paused) {
     VIDEO.play();
   } else {
@@ -15,8 +15,8 @@ let togglePlay = () => {
 }
 
 function updateBtn() {
-  const icon = this.paused ? '►' : '❚ ❚';
-  TOGGLE.textContent = icon;
+  const ICON = this.paused ? '►' : '❚ ❚';
+  TOGGLE.textContent = ICON;
 }
 
 function skip() {
@@ -27,12 +27,12 @@ function handleRangeUpdate() {
   VIDEO[this.name] = this.value;
 }
 
-let handleProgress = () => {
+const handleProgress = () => {
   const percent = (VIDEO.currentTime / VIDEO.duration) * 100;
   PROGRESSBAR.style.flexBasis = `${percent}%`;
 }
 
-let scrub = (e) => {
+const scrub = (e) => {
   const scrubTime = (e.offsetX / PROGRESS.offsetWidth) * VIDEO.duration;
   VIDEO.currentTime = scrubTime;
 }
